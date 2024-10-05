@@ -11,7 +11,7 @@ for directory in os.listdir(data_dir):
 smallest_distance = None
 for file in os.listdir("Sample"):
     if file.endswith(".jpg"):
-        result = DeepFace.verify("person3.jpg", f"Sample/{file}")
+        result = DeepFace.verify("image.jpg", f"Sample/{file}")
         if result['verified']:
             print("This person looks exactly like", file.split(".")[0])
             break
